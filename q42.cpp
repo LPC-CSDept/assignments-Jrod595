@@ -1,50 +1,66 @@
 #include <iostream>
 #include <iomanip>
 using namespace std;
+int main()
+{
+    const int WEIGHT_MIN   =    0,
+              WEIGHT_MAX   =   20,
+              DISTANCE_MIN =   10,
+              DISTANCE_MAX = 3000;
 
-int main(){
+    float package_weight,
+          distance,
+          total_charges;
 
+    cout << "\nWhat is the weight (kg) of the package? ";
+    cin >> package_weight;
 
-double weight;
-double cost = 0.0;
-double distance;
-double i;
+    if (package_weight <= WEIGHT_MIN || 
+        package_weight > WEIGHT_MAX)
+    {
+        cout << "\nWe're sorry, package weight must be\n"
+             << " more than 0kg and less than 20kg.\n"
+             << "Rerun the program and try again.\n" 
+             << endl;
+    }
+    else 
+    {
+        cout << "\nDistance? ";
+        cin >> distance;
 
-cin >> weight;
-cin >> distance;
+        if (distance < DISTANCE_MIN || 
+            distance > DISTANCE_MAX)
+        {
+            cout << "\nWe're sorry, the distance must be\n"       << "within 10 and 3000 miles.\n"
+                 << "Rerun the program and try again.\n" 
+                 << endl;
+        }
+        else
+        {
+             if (package_weight <= 2)
+                total_charges = (distance / 500) * 1.10;
+            else if (package_weight > 2 && 
+                    package_weight <= 6)
+                total_charges = (distance / 500) * 2.20;
+            else if (package_weight > 6 && 
+                    package_weight <= 10)
+                total_charges = (distance / 500) * 3.70;
+            else if (package_weight > 10 && 
+                    package_weight <= 20)
+                total_charges = (distance / 500) * 4.80;
 
-if (weight <= 0){
-cout << "ILLEGAL WEIGHT: BELOW MINIMUM" << endl;
-}
+            cout << setprecision(2) << fixed
+                << "Total charges are $" 
+                << total_charges 
+                << "\nFor a distance of " 
+                << distance
+                << " miles\nand a total weight of " 
+                << package_weight 
+                << "kg.\n"
+                << endl;
+        }
 
-else if (weight > 20){
-cout << "ILLEGAL WEIGHT: ABOVE MAXIMUM" << endl;
-}
+    }
 
-else if (distance < 10 || distance > 3000){
-cout << "ILLEGAL DISTANCE" << endl;
-}
-
-else{
-i = distance/500;
-}
-
-if (weight <= 2){
-cost = i * 1.10;
-}
-
-else if (weight > 2 && weight <= 6){
-cost = i * 2.20;
-}
-
-else if (weight > 6 && weight <=10){
-cost = i * 3.70;
-}
-
-else if (weight > 10 && weight <= 20){
-cost = i * 4.80;
-}
-cout << fixed << setprecision(2) << endl;
-
-return 0;
+    return 0;
 }
