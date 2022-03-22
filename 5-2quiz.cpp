@@ -1,10 +1,12 @@
-#include <cstdlib>
+#include <iostream>
 #include <ctime>
-#int randomGen()
-int main()
-{
-srand(time(0));
-random = rand( ) ;
-  int random [5], max_value = 99, min_value = 0;
-  random = rand() % max_value + min_value;
-  
+#include <cstdlib>
+using namespace std;
+int main() 
+{   
+  srand(time(0));  // Initialize random number generator.
+ 
+  cout<<"Random numbers generated between 0 and 5:"<<endl;
+  for(int i=0;i<10;i++)
+      cout << (rand() % 5) + 1<<" ";  
+  return 0; 
