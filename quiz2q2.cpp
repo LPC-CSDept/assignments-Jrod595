@@ -14,7 +14,9 @@ int main()
     {ans=ans*number;
       i++;
       }
-    while(i<+exponent);
+    while(i < exponent);
+      // Syntax Error
+    // while(i<+exponent);
   cout<<number<<"^"<<exponent<<"="<<ans;
   return 0;
 }
