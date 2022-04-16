@@ -24,11 +24,13 @@ std::tuple<int, int, int> generateNumbs() {
 
 int min(int n1, int n2, int n3) {
   int arr[3];
+  int n = sizeof(arr);
+  
   arr[0] = n1;
   arr[1] = n2;
   arr[2] = n3;
-  
-  std::sort(arr, arr+sizeof(arr));
+  sort(arr, arr + n);
+
   return arr[0];
 } 
 
