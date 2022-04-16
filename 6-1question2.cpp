@@ -42,4 +42,19 @@ int main()  {
   
   return 0;
 }
+
+int min(int n1, int n2, int n3) {
+  int arr[3];
+  arr[0] = n1;
+  arr[1] = n2;
+  arr[2] = n3;
+  
+  std::sort(arr, arr+sizeof(arr));
+  
+  return arr[0];
+} 
+
+int printMin(int n1, int n2, int n3) {
+  cout << "min(n1,n2,n3)==" << min(n1,n2,n3) << '\n';
+}
   
