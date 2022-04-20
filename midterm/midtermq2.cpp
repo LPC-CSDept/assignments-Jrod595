@@ -1,23 +1,14 @@
 #include<iostream>
  #include<fstream>
- #include<string>
- #include<iomanip>
- using namespace std;
- int main()
- {
-     struct studentType
-     {
+#include<cmath>
+#include<cstdlib>
+using namespace std;
 
-     //Declare variables
+int main()
+{
+char filename [50];
+ifstream students;
+cin.getline (filename, 50)
 
-     string studentFName;
-     string studentMName;
 
-     string studentLName;
-     
-
-     int testScore;
-
-     char grade;
-
- }
+}
