@@ -20,5 +20,6 @@ while (students.good()){
     cout << word << " ";
     students >> word;
 }
-
+system ("pause");
+return 0;
 }
