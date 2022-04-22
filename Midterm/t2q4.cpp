@@ -11,11 +11,14 @@ int main () {
 
   int nums[10];
    int randNumb, temp;
+  int randomNumber = rand();
+  int getRdnum(void);
    
-   for (int i = 0; i < 10; i++) {
-       randNumb = getRandomNumber();
+   for (int N = 10; N<10; N++)
+     {
+       randomNumber = randNumb();
        while(randNumb >= temp) {
-            nums[i] = randNumb;
+            nums[N] = randNumb;
            temp = randNumb;
        }
     }
@@ -23,9 +26,9 @@ int main () {
   ofstream myfile ("numbers.txt");
   if (myfile.is_open())
   {
-    for (int i = 0; i < 10; i++)  {
+    for (int N = 10; N<10; N++)  {
         // Write to file
-      myfile << nums[i] << "\n";
+      myfile << nums[N] << "\n";
     }
     
     myfile.close();
