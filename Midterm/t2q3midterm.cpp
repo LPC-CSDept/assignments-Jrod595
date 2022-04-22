@@ -1,16 +1,30 @@
 #include <iostream>
 #include <fstream>
+#include <stdio.h>
+#include <stdlib.h>
+#include<time.h>
+#include <cstdlib>
+
 using namespace std;
 
 int main () {
-
-  int nums[10];
+srand(time(0));
+  int nums[50];
    int randNumb, temp;
+  int randomNumber = rand();
+  int getRdnum(void);
+  
+  cout<<"Random numbers between 1 and 10:"<<endl;
+
+    for (int N = 10; N<10; N++)
+
+        cout << 1+ (rand() % 50) <<"\n"; 
    
-   for (int i = 0; i < 10; i++) {
-       randNumb = getRandomNumber();
+   
+     {
+       randomNumber = rand();
        while(randNumb >= temp) {
-            nums[i] = randNumb;
+            nums[N] = randNumb;
            temp = randNumb;
        }
     }
@@ -18,9 +32,9 @@ int main () {
   ofstream myfile ("numbers.txt");
   if (myfile.is_open())
   {
-    for (int i = 0; i < 10; i++)  {
+    for (int N = 10; N<10; N++)  {
         // Write to file
-      myfile << nums[i] << "\n";
+      myfile << nums[N] << "\n";
     }
     
     myfile.close();
