@@ -19,12 +19,28 @@ srand(time(0));
     for (int N = 10; N<10; N++)
 
         cout << 1+ (rand() % 50) <<"\n"; 
+
+   srand((unsigned) time(NULL)); 
+
+    // Using for loop
+
+    for(int N=0; N<10; N++){
+
+        // Offset 1 and range 50 to generate random numbers between 1 and 50
+
+        int random = 1+ (rand() % 50);
+
+        cout<<random<<"   ";
+
+    }
+
+    return 1;
    
    
      {
        randomNumber = rand();
        while(randNumb >= temp) {
-            nums[N] = randNumb;
+            
            temp = randNumb;
        }
     }
