@@ -7,34 +7,22 @@
 
 using namespace std;
 
-int main () {
+int main(){
 
-  int nums[10];
-   int randNumb, temp;
-  int randomNumber = rand();
-  int getRdnum(void);
-   
-   for (int N = 10; N<10; N++)
-     {
-       randomNumber = randNumb();
-       while(randNumb >= temp) {
-            nums[N] = randNumb;
-           temp = randNumb;
-       }
+    srand((unsigned) time(NULL)); 
+
+    // Using for loop
+
+    for(int N1=0; N1<1; N1++){
+
+        // Offset 1 and range 100 to generate random numbers between 1 and 100
+
+        int random = 1+ (rand() % 100);
+
+        cout<<random<<"   ";
+
     }
 
-  ofstream myfile ("numbers.txt");
-  if (myfile.is_open())
-  {
-    for (int N = 10; N<10; N++)  {
-        // Write to file
-      myfile << nums[N] << "\n";
-    }
-    
-    myfile.close();
-    }
-  
+    return 1;
 
-  else cout << "Unable to open file";
-  return 0;
 }
