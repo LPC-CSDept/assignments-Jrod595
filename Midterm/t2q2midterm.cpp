@@ -3,7 +3,7 @@
 using namespace std;
 
 int main () {
-  ofstream myfile ("example.txt");
+  ofstream myfile ("studentsS.txt");
   if (myfile.is_open())
   {
     myfile << "This is a line.\n";
