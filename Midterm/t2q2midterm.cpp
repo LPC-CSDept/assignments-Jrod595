@@ -21,11 +21,24 @@ int main () {
     {
      if (!isNumber(line)){
        studentname=line;
+       cout << studentname;
       continue;
      }
-       
+      int sumTotal;
+        int average;
+
+
+      cout << "Sum total: " << sumTotal << " Average: " << average << "\n";
+
+ 
+
+        if (average >= 80) {
+            total80 = total80+1;
+
+        } 
     }
     myfile.close();
+    std::cout << "Total students with 80+: " << total80 << std::endl;
   }
 
   else cout << "Unable to open file"; 
