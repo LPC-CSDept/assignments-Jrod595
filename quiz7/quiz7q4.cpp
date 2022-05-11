@@ -30,3 +30,13 @@ void printvector(vector<int> vec)
 	cout << endl;
 }
   void deleteone(vector<int>&vec)
+  {
+    int usernum,deletecnt=0;
+    cin>>usernum;// taking input from the user
+    for(int i=0;i<vec.size();i++)  // traversing the loop
+    {
+        if(vec[i]==usernum)
+        {
+            // if the element is found erase it
+            vec.erase(vec.begin()+i);
+            deletecnt++;  // increase the count value by +1 
