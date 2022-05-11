@@ -40,3 +40,9 @@ void printvector(vector<int> vec)
             // if the element is found erase it
             vec.erase(vec.begin()+i);
             deletecnt++;  // increase the count value by +1 
+                    }
+    }
+    // diplaying result
+    cout<<usernum<<" is deleted "<<deletecnt<<" times"<<endl;
+    
+}
