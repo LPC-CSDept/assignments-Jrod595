@@ -12,3 +12,18 @@ void findMax(int n, int arr[]) {
             if (arr[i] > half1) {
                 half1 = arr[i];
             }
+            } else {
+            if (arr[i] > half2) {
+                half2 = arr[i];
+            }
+        }
+    }
+    
+    cout << "Largest in 1st half: " << half1 << endl;
+    cout << "Largest in 2nd half: " << half2 << endl;
+}
+ 
+// Driver Code
+int main()
+{
+    int arr[] = {10, 324, 45, 90, 9808,1,5,6,7,8};
