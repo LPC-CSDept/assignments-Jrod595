@@ -12,7 +12,7 @@ void findMax(int n, int arr[]) {
             if (arr[i] > half1) {
                 half1 = arr[i];
             }
-            } else {
+        } else {
             if (arr[i] > half2) {
                 half2 = arr[i];
             }
@@ -28,8 +28,6 @@ int main()
 {
     int arr[] = {10, 324, 45, 90, 9808,1,5,6,7,8};
     int n = sizeof(arr) / sizeof(arr[0]);
-    cout << "Largest in given array is "
-         << largest(arr, n) << endl;
     
     findMax(n, arr);
     return 0;
