@@ -19,3 +19,8 @@ int main(){
 int number[N] = {10,15,0,-25,19,20,25,30,45,20};
 //lopp from 0 to less than N
 for(int i=0;i<N;i++){
+    //checks and display element from numbers
+if(check(number,i))
+cout<<number[i]<<" at index "<<i<<" is following the criteria."<<endl;
+}
+}
