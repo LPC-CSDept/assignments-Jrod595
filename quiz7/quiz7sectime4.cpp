@@ -29,3 +29,13 @@ vector<int>::iterator it;
 it = std::find(v.begin(), v.end(), usernum);
 int deletecnt = 0;
 while(it!= v.end())
+{
+v.erase(it);
+  
+deletecnt++;
+
+it = std::find(v.begin(), v.end(), usernum);
+}
+  
+  
+}
