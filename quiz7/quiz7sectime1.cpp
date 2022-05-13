@@ -20,3 +20,10 @@ int main()
       //find the number that is last with difference of ten
       if( abs( number[i] - number[i-1] ) < 10) {
         cout << number[i] << endl;
+              }
+    }else if ( (abs( number[i] - number[i+1]) < 10) && (abs( number[i] - number[i-1] ) < 10 ) ) {
+      cout << number [i] << endl;
+    }
+  }
+  return 1;
+}
