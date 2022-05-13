@@ -1,5 +1,5 @@
 #include <stdio.h>
-//function starts here
+//function beings right here
 int findMax(int number[],int from,int to)
 {
 int i,largest=number[from];
