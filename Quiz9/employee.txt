@@ -1,4 +1,4 @@
-123456, John Doe, 140000, Computer, Jan 31 2020
-112345, Ben Dover, 135000, Accounting, Jan 30 2020
-111234, Mary Juana, 134000, Computer, Jan 29 2020
-111123, Amanda Kissnhug, Accounting, Jan 28 2020
+123456 John Doe 140000, Computer Jan 31 2020
+112345 Ben Dover 135000, Accounting Jan 30 2020
+111234 Mary Juana 134000, Computer Jan 29 2020
+111123 Amanda Kissnhug Accounting Jan 28 2020

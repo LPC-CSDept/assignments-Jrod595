@@ -5,21 +5,15 @@
  
 using namespace std;
  
-struct employees {
-    string name;
-    string dept;
-    int id;
-    string startDate;
-    int salary;
+struct Employee{
+   int ID;
+   string fname;
+   string lname;
+   double sal;
+   string department;
+   string month;
+   int day;
+   int year;
 };
  
 int main ()  
-{
-    employees emp[4]; // the array of employee structs
-    employees employee; //temp employee struct for use in the while loop
-    ifstream inFile("employee.txt"); //our file
-    string line;
-    int linenum = 0;
- 
-    while (getline (inFile, line))
-    {
