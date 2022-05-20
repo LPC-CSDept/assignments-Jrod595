@@ -1,3 +1,5 @@
+#include <iostream>
+#include <sstream>
 #include <fstream>
 #include <string>
  
@@ -11,5 +13,4 @@ struct employees {
     int salary;
 };
  
-int main ()
-{
+int main ()  
