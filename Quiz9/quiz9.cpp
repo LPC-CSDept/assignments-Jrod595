@@ -41,6 +41,24 @@ void readFromFile(Employee employees[], int size, int& count){
   
    infile.close();
 
-   
+// show all employees with salary over 100k
+void greaterSalary(Employee emps[], int count){
+   cout<<"Employees with salary greater than $100,000 are:\n";
+   for(int i=0; i<count; i++){
+       if(emps[i].sal > 100000){
+           cout << emps[i].ID<<" ";
+       cout << emps[i].fname<<" ";
+       cout << emps[i].lname<<" ";
+       cout << emps[i].sal<<" ";
+       cout << emps[i].department<<" ";
+       cout << emps[i].month<<" ";
+       cout << emps[i].day<<" ";
+       cout << emps[i].year<<" ";
+       cout<<endl;
+       }
+   }
+   cout<<endl;
+}
+
   
 }
