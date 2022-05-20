@@ -14,3 +14,12 @@ struct employees {
 };
  
 int main ()  
+{
+    employees emp[4]; // the array of employee structs
+    employees employee; //temp employee struct for use in the while loop
+    ifstream inFile("employee.txt"); //our file
+    string line;
+    int linenum = 0;
+ 
+    while (getline (inFile, line))
+    {
