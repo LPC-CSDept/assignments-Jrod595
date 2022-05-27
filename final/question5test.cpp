@@ -4,6 +4,7 @@ using namespace std;
 //array sizes
 const int NAME_SIZE=51, socialsecurity_size=51, Score1_size=15, Score2_size=15, Score3_size=15, Score4_size=15, Score5_size=15, Grade_size=10;
 //declare structure for the record struct info
+const unsigned short N=5;
 struct Scores{     
       double sc[N];     
       string grade;
@@ -32,7 +33,12 @@ int main()
       cout<< "Enter the following data about a "
         <<"person:\n";
       cout<<"Name: ";
-      cin.getline(person.name, NAME_SIZE);
-      cout
+      cin.getline(person.first, NAME_SIZE);
+      cout<<"first: ";
+      cin>>person.first;
+      cin.ignore(); //skip over lines
+      cout<< "last:";
+      cin.getline(person.last, NAME_SIZE);
+      
     }
 }
