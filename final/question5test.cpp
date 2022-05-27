@@ -39,6 +39,15 @@ int main()
       cin.ignore(); //skip over lines
       cout<< "last:";
       cin.getline(person.last, NAME_SIZE);
+      cout << "lastname:";
+      cin.getline("person.grade:");
+      cout<<"grade:";
+
+      //write contents to file
+      people.write(reinterpret_cast<char *>(&person),
+        sizeof(person));
+
+      //decide if user wants to write another record
       
     }
 }
