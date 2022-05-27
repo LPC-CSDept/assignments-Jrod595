@@ -48,6 +48,13 @@ int main()
         sizeof(person));
 
       //decide if user wants to write another record
+      cout<< "do you want to look at another record?";
+      cin>>again;
+      cin.ignore(); //skip over lines
+      }while (again =='Y'||again =='y');
+  //close the file
+  people.close();
+  return 0;
       
     }
 }
