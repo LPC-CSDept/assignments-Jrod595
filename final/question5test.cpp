@@ -1,5 +1,5 @@
 #include <iostream>
-#include<fstream>
+#include <fstream>
 using namespace std;
 //array sizes
 const int NAME_SIZE=51, socialsecurity_size=51, Score1_size=15, Score2_size=15, Score3_size=15, Score4_size=15, Score5_size=15, Grade_size=10;
@@ -56,5 +56,5 @@ int main()
   people.close();
   return 0;
       
-    }
+    
 }
